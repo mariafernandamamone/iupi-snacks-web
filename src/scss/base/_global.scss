@@ -1,0 +1,55 @@
+@use '../abstracts/abstracts' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: $font-brand;
+  background-color: $color-bg-soft;
+  color: $color-plum;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+h1, h2, h3, h4, .font-brand {
+  font-family: $font-brand;
+  color: $color-plum;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 94%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
