@@ -1,0 +1,22 @@
+@use '../abstracts/abstracts' as *;
+
+.section-header {
+  text-align: center;
+  max-width: 38rem;
+  margin: 0 auto 2.5rem;
+
+  &__title {
+    font-family: $font-brand;
+    font-size: clamp(1.85rem, 3.5vw, 2.5rem);
+    color: $color-plum;
+    line-height: 1.2;
+    margin-bottom: 0.65rem;
+  }
+
+  &__desc {
+    font-family: $font-body;
+    font-size: 1.05rem;
+    color: rgba($color-plum, 0.85);
+    line-height: 1.6;
+  }
+}

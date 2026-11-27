@@ -1,0 +1,274 @@
+@use '../abstracts/abstracts' as *;
+
+// ==========================================
+// 1. HERO
+// ==========================================
+.hero {
+  position: relative;
+  padding: 4.5rem 1.25rem;
+  background: linear-gradient(
+      135deg,
+      rgba($color-yellow-light, 0.85) 0%,
+      rgba($color-pink, 0.78) 50%,
+      rgba($color-mint, 0.85) 100%
+    ),
+    url('/img/hero-bg.webp') center / cover no-repeat;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    padding: 6.5rem 2rem;
+  }
+
+  &__container {
+    max-width: 48rem;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-family: $font-brand;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    color: $color-plum;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+  }
+
+  &__subtitle {
+    font-family: $font-body;
+    font-size: clamp(1.05rem, 2vw, 1.25rem);
+    font-weight: 600;
+    color: $color-plum;
+    line-height: 1.6;
+    max-width: 36rem;
+    margin: 0 auto 2rem;
+  }
+}
+
+// ==========================================
+// 2. CATEGORÍAS DESTACADAS
+// ==========================================
+.categories {
+  padding: 4.5rem 1.25rem;
+  background-color: $color-bg-soft;
+
+  &__container {
+    max-width: 72rem;
+    margin: 0 auto;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  &__cta {
+    text-align: center;
+  }
+}
+
+.category-card {
+  background-color: $color-white;
+  border: 1.5px solid rgba($color-mint, 0.65);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba($color-plum, 0.05);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: $color-teal-dark;
+    box-shadow: 0 12px 24px rgba($color-plum, 0.1);
+
+    img {
+      transform: scale(1.05);
+    }
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__img-wrap {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background-color: rgba($color-mint, 0.2);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.35s ease;
+    }
+  }
+
+  &__title {
+    padding: 1.15rem 1rem;
+    text-align: center;
+    font-family: $font-brand;
+    font-size: 1.35rem;
+    color: $color-plum;
+  }
+}
+
+// ==========================================
+// 3. PROPUESTA DE VALOR (3 PILARES)
+// ==========================================
+.features {
+  padding: 3.5rem 1.25rem;
+  background-color: rgba($color-yellow-light, 0.45);
+  border-block: 1.5px solid rgba($color-yellow, 0.35);
+
+  &__container {
+    max-width: 68rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__item {
+    padding: 1rem;
+  }
+
+  &__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: 0.85rem;
+    border-radius: 50%;
+    background-color: $color-white;
+    font-size: 1.65rem;
+    box-shadow: 0 4px 12px rgba($color-plum, 0.08);
+  }
+
+  &__title {
+    font-family: $font-brand;
+    font-size: 1.3rem;
+    color: $color-plum;
+    margin-bottom: 0.4rem;
+  }
+
+  &__text {
+    font-family: $font-body;
+    font-size: 0.98rem;
+    color: rgba($color-plum, 0.85);
+    line-height: 1.55;
+    max-width: 18rem;
+    margin: 0 auto;
+  }
+}
+
+// ==========================================
+// 4. SOBRE NOSOTROS
+// ==========================================
+.about-preview {
+  padding: 4.5rem 1.25rem;
+  background-color: $color-white;
+
+  &__container {
+    max-width: 62rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+    align-items: center;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 16rem 1fr;
+      gap: 3rem;
+      text-align: left;
+    }
+  }
+
+  &__image-wrap {
+    width: 14rem;
+    height: 14rem;
+    margin: 0 auto;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    border: 3px solid $color-mint;
+    box-shadow: 0 8px 20px rgba($color-plum, 0.1);
+
+    @media (min-width: 768px) {
+      width: 16rem;
+      height: 16rem;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  &__title {
+    font-family: $font-brand;
+    font-size: clamp(1.85rem, 3.5vw, 2.4rem);
+    color: $color-plum;
+    margin-bottom: 0.9rem;
+  }
+
+  &__text {
+    font-family: $font-body;
+    font-size: 1.05rem;
+    color: rgba($color-plum, 0.88);
+    line-height: 1.7;
+    margin-bottom: 1.75rem;
+  }
+}
+
+// ==========================================
+// 5. CLIENTES FELICES
+// ==========================================
+.happy-clients {
+  padding: 4.5rem 1.25rem;
+  background-color: rgba($color-pink, 0.16);
+
+  &__container {
+    max-width: 68rem;
+    margin: 0 auto;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: start;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+.client-shot {
+  margin: 0;
+  border-radius: 1.15rem;
+  overflow: hidden;
+  border: 2px solid rgba($color-coral, 0.45);
+  background-color: $color-white;
+  box-shadow: 0 6px 18px rgba($color-plum, 0.08);
+  transition: transform 0.25s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}

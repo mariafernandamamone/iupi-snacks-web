@@ -37,9 +37,9 @@
     }
 
     p {
-         font-weight: 400;
-      font-size: 1.05rem;
-      max-width: 340px;
+      font-weight: 400;
+      font-size: 1.5rem;
+      max-width: 350px;
     }
   }
 
@@ -57,15 +57,18 @@
 
     a {
       font-family: $font-brand;
-         font-weight: 400;
-      font-size: 1.15rem;
+      padding: 1rem 1.25rem;
+      font-weight: 400;
+      font-size: 1.25rem;
       text-transform: uppercase;
       letter-spacing: 0.03em;
       color: $color-plum;
       transition: color 0.2s ease, transform 0.2s ease;
 
       &:hover {
-        color: $color-orange-dark;
+        background-color: rgba($color-white, 0.55);
+        border-radius: 999px;
+        color: $color-teal-dark;
       }
     }
   }
@@ -74,8 +77,8 @@
     display: inline-flex;
     align-items: center;
     gap: 0.6rem;
-       font-weight: 400;
-    font-size: 1.05rem;
+    font-weight: 400;
+    font-size: 1.5rem;
     color: $color-plum;
     background-color: rgba($color-white, 0.7);
     padding: 0.6rem 1.25rem;
@@ -100,7 +103,7 @@
     color: $color-white;
     text-align: center;
     padding: 0.9rem;
-    font-size: 0.95rem;
-       font-weight: 400;
+    font-size: 1.2rem;
+    font-weight: 400;
   }
 }

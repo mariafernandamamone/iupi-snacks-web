@@ -1,4 +1,3 @@
-import '../scss/main.scss';
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('Iupi Snacks - App iniciada');

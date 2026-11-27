@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Iupi - Snacks ricos y saludables. Descubrí nuestras opciones naturales y hacé tu pedido directo." />
+  <link rel="preload" href="/src/assets/fonts/Caroni-Regular.otf" as="font" type="font/otf" crossorigin />
+  <link rel="stylesheet" href="/src/scss/main.scss" />
   <title>Iupi | Snacks Ricos y Saludables</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -49,6 +51,163 @@
   </header>
 
   <main id="main-content">
+    <!-- 1. HERO -->
+    <section class="hero">
+      <div class="hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">Snacks ricos, caseros y saludables</h1>
+          <p class="hero__subtitle">Elaborados sin aditivos ni conservantes, listos para disfrutar en familia en cualquier momento del día.</p>
+          <a href="tienda.html" class="btn btn--primary">Explorar la tienda</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. CATEGORÍAS DESTACADAS -->
+    <section class="categories">
+      <div class="categories__container">
+        <header class="section-header">
+          <h2 class="section-header__title">Nuestros favoritos</h2>
+          <p class="section-header__desc">Elegí tu categoría preferida y armá tu pedido directo por WhatsApp.</p>
+        </header>
+
+        <div class="categories__grid">
+          <article class="category-card">
+            <a href="tienda.html?categoria=cookies" class="category-card__link">
+              <div class="category-card__img-wrap">
+                <img src="/img/cat-cookies.webp" alt="Cookies caseras saludables" loading="lazy" />
+              </div>
+              <h3 class="category-card__title">Cookies</h3>
+            </a>
+          </article>
+
+          <article class="category-card">
+            <a href="tienda.html?categoria=alfajores" class="category-card__link">
+              <div class="category-card__img-wrap">
+                <img src="/img/cat-alfajores.webp" alt="Alfajores saludables" loading="lazy" />
+              </div>
+              <h3 class="category-card__title">Alfajores</h3>
+            </a>
+          </article>
+
+          <article class="category-card">
+            <a href="tienda.html?categoria=muffins" class="category-card__link">
+              <div class="category-card__img-wrap">
+                <img src="/img/cat-muffins.webp" alt="Muffins caseros" loading="lazy" />
+              </div>
+              <h3 class="category-card__title">Muffins</h3>
+            </a>
+          </article>
+
+          <article class="category-card">
+            <a href="tienda.html?categoria=salados" class="category-card__link">
+              <div class="category-card__img-wrap">
+                <img src="/img/cat-salados.webp" alt="Snacks salados saludables" loading="lazy" />
+              </div>
+              <h3 class="category-card__title">Salados</h3>
+            </a>
+          </article>
+        </div>
+
+        <div class="categories__cta">
+          <a href="tienda.html" class="btn btn--secondary">Ver toda la tienda</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PROPUESTA DE VALOR (3 PILARES) -->
+    <section class="features" aria-label="Nuestros diferenciales">
+      <div class="features__container">
+        <div class="features__item">
+          <span class="features__icon" aria-hidden="true">🌿</span>
+          <h3 class="features__title">100% Naturales</h3>
+          <p class="features__text">Sin conservantes, colorantes ni aditivos artificiales.</p>
+        </div>
+
+        <div class="features__item">
+          <span class="features__icon" aria-hidden="true">❄️</span>
+          <h3 class="features__title">Siempre listos</h3>
+          <p class="features__text">Se entregan congelados para conservar toda su frescura.</p>
+        </div>
+
+        <div class="features__item">
+          <span class="features__icon" aria-hidden="true">🎁</span>
+          <h3 class="features__title">Box a pedido</h3>
+          <p class="features__text">Opciones frescas especiales reservando con 7 días.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SOBRE NOSOTROS -->
+    <section class="about-preview">
+      <div class="about-preview__container">
+        <div class="about-preview__image-wrap">
+          <img src="/img/fundadora-iupi.webp" alt="Fundadora de Iupi Snacks Saludables" loading="lazy" />
+        </div>
+
+        <div class="about-preview__content">
+          <h2 class="about-preview__title">Hola, ¡somos Iupi!</h2>
+          <p class="about-preview__text">
+            Nacimos con una idea simple: que comer rico y cuidar lo que llevamos a la mesa vayan de la mano. Cada receta está pensada para grandes y chicos, hecha de forma artesanal y con ingredientes reales.
+          </p>
+          <a href="mi-historia.html" class="btn btn--outline">Conocé nuestra historia</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CLIENTES FELICES (3 CAPTURAS) -->
+    <section class="happy-clients">
+      <div class="happy-clients__container">
+        <header class="section-header">
+          <h2 class="section-header__title">Clientes felices</h2>
+          <p class="section-header__desc">Lo que dicen quienes ya disfrutan nuestros snacks en casa.</p>
+        </header>
+
+        <div class="happy-clients__grid">
+          <figure class="client-shot">
+            <img src="/img/cliente-feliz-1.webp" alt="Comentario de cliente feliz 1" loading="lazy" />
+          </figure>
+
+          <figure class="client-shot">
+            <img src="/img/cliente-feliz-2.webp" alt="Comentario de cliente feliz 2" loading="lazy" />
+          </figure>
+
+          <figure class="client-shot">
+            <img src="/img/cliente-feliz-3.webp" alt="Comentario de cliente feliz 3" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PREGUNTAS FRECUENTES -->
+    <section class="faq">
+      <div class="faq__container">
+        <header class="section-header">
+          <h2 class="section-header__title">Preguntas frecuentes</h2>
+        </header>
+
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary class="faq__question">¿Cómo se entregan los productos?</summary>
+            <p class="faq__answer">Todos nuestros snacks se entregan congelados para mantener intacta su calidad sin usar conservantes. Las Box son frescas y se preparan por encargo.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">¿Con cuánta anticipación hago mi pedido?</summary>
+            <p class="faq__answer">Los productos individuales tienen entrega rápida según stock disponible. Para las Box frescas necesitamos al menos 7 días de anticipación.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">¿Cómo se descongelan antes de comer?</summary>
+            <p class="faq__answer">Solo tenés que sacarlos del freezer unos 15 a 20 minutos antes de consumir, o darles un toque suave de horno/tostadora según el producto.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">¿Cuáles son los medios de pago?</summary>
+            <p class="faq__answer">Aceptamos transferencia bancaria, Mercado Pago y efectivo al momento de la entrega.</p>
+          </details>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">

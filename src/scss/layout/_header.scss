@@ -32,19 +32,22 @@
   }
 
   &__toggle {
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0.4rem;
     display: flex;
     flex-direction: column;
     gap: 6px;
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0.25rem;
 
     span {
-      width: 30px;
-      height: 3.5px;
+      display: block;
+      width: 100%;
+      height: 2.5px;
       background-color: $color-plum;
-      border-radius: 3px;
+      border-radius: 2px;
     }
 
     @media (min-width: 768px) {
@@ -79,19 +82,19 @@
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 5rem;
     align-items: center;
 
     @media (min-width: 768px) {
       flex-direction: row;
-      gap: 3rem;
+      gap: rem;
     }
   }
 
   &__link {
     font-family: $font-brand;
-       font-weight: 400;
-    font-size: 1.15rem;
+    font-weight: 400;
+    font-size: 1.5rem;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $color-plum;
@@ -100,12 +103,15 @@
     transition: color 0.2s ease, border-color 0.2s ease;
 
     &:hover {
-      color: $color-orange-dark;
+      background-color: rgba($color-white, 0.55);
+      border-radius: 999px;
+      color: $color-plum;
+      padding: 1rem 1.25rem;
     }
 
     &.active {
-      color: $color-orange-dark;
-      border-bottom-color: $color-orange-dark;
+      color: $color-teal-dark;
+      border-bottom-color: $color-teal-dark;
     }
   }
 
@@ -136,7 +142,7 @@
     position: absolute;
     top: -4px;
     right: -6px;
-    background-color: $color-coral;
+    background-color: $color-yellow;
     color: $color-white;
     font-family: $font-brand;
     font-size: 0.8rem;
@@ -156,7 +162,7 @@
     color: $color-plum;
     text-align: center;
     padding: 0.6rem 1rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 400;
     border-top: 1px solid rgba($color-white, 0.5);
 
