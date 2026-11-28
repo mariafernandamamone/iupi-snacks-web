@@ -9,7 +9,7 @@
   border-radius: 999px;
   border: 2px solid transparent;
   font-family: $font-brand;
-  font-size: 1.15rem;
+  font-size: 1.5rem;
   letter-spacing: 0.04em;
   text-decoration: none;
   cursor: pointer;
@@ -28,7 +28,8 @@
     color: $color-white;
 
     &:hover {
-      background-color: $color-orange-dark;
+      background-color: $color-mint;
+      color: $color-plum;
     }
   }
 
@@ -43,8 +44,7 @@
   }
 
   &--outline {
-    background-color: transparent;
-    border-color: $color-plum;
+    background-color: $color-pink;
     color: $color-plum;
 
     &:hover {
